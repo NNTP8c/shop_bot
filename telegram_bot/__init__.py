@@ -1,0 +1,1 @@
+"""Telegram bot service entry point package."""
