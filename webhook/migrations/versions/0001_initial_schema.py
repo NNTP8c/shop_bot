@@ -20,6 +20,7 @@ def _create_initial_schema() -> None:
         sa.Column("total_orders", sa.Integer(), nullable=False, server_default="0"),
         sa.Column("total_spending", sa.Numeric(12, 2), nullable=False, server_default="0.00"),
         sa.Column("status", sa.String(length=32), nullable=False, server_default="active"),
+        sa.Column("language", sa.String(length=2), nullable=True),
     )
     op.create_index(op.f("ix_customers_telegram_user_id"), "customers", ["telegram_user_id"], unique=True)
 

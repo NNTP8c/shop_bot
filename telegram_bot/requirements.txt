@@ -3,3 +3,4 @@ SQLAlchemy>=2.0.40,<2.1
 PyMySQL==1.1.1
 alembic==1.14.0
 python-dotenv==1.0.1
+cryptography>=41.0.0
